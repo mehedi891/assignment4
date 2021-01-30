@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curise Booking</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <!-- Stylesheet -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--Header and Menu Section-->
+    <header class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a class="active" href="#">Sign Up</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Booking Section-->
+    <main >
+        <div id="booking-page" class="main-content container">
+        <div class="booking-content">
+            <h1>Cruise Queen</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book./p>
+        </div>
+
+
+        <div class="booking-form">
+            <h3>Book Ocean Time</h3>
+            <div class="input-group">
+                <label for="">Flying From</label>
+                <input class="inp-style" type="text" name="" placeholder="Dhake, Bangladesh">
+            </div>
+            <div class="input-group">
+                <label for="">Flying To</label>
+                <input class="inp-style" type="text" name="" placeholder="New York, United States">
+            </div>
+            <div class="inputs">
+                <div class="input-group">
+                    <label" for="">Departure</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+                <div class="input-group">
+                    <label for="">Return</label>
+                    <input class="inp-style" type="date" name="">
+                </div>
+            </div>
+            <div class="input-group f-class">
+                <div class="d-flex">
+                <div>
+                    <label for="">First Class ($150)</label>
+                    <input id="firstClass-input" class="inp-style inp-width" type="number" name="" value="0">
+                </div>
+                <div class="plus-minus-btn d-flex">
+                    <button class="btn btn-default" id="firstClass-minus"><i class="fas fa-minus"></i></button>
+                    <button class="btn btn-default margin-set" id="firstClass-plus"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            </div>
+            
+            <div class="input-group f-class">
+                <div class="d-flex">
+                <div>
+                    <label for="">Economy ($100)</label>
+                    <input id="economy-input" class="inp-style inp-width" type="number" name="" value = "0">
+                </div>
+                <div class="plus-minus-btn d-flex">
+                    <button class="btn btn-default" id="economy-minus"><i class="fas fa-minus"></i></button>
+                    <button class="btn btn-default margin-set" id="economy-plus"><i class="fas fa-plus"></i></button>
+                </div>
+            </div>
+            </div>
+            <div class="calculations">
+                <div class="amount">
+                    <div class="left">
+                        <p>Subtotal</p>
+                    </div>
+                    <div class="right">
+                        <p><span id ="subtotal-price">$0</span></p>
+                    </div>
+                </div>
+
+                <div class="amount">
+                    <div class="left">
+                        <p>Charge 10% VAT</p>
+                    </div>
+                    <div class="right">
+                        <p> <span id="tax-calculation">$0</span></p>
+                    </div>
+                </div>
+                <hr>
+                <div class="amount">
+                    <div class="left">
+                        <h4>Total</h4>
+                    </div>
+                    <div class="right">
+                        <p><span id="calculate-total">$0</span></p>
+                    </div>
+                </div>
+            </div>
+            <button id="booking-btn" class="btn-style">Book Now</button>
+        </div>
+    </div>
+
+
+
+
+    <div id="confirmation-area" class="m-5" align="center">
+        <td class="esd-stripe" esd-custom-block-id="1754" align="center">
+            <table class="es-content-body confirmArea2" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
+                <tbody>
+                    <tr>
+                        <td class="esd-structure es-p10t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="560" valign="top" align="center">
+                                            <table style="border-radius: 0px; border-collapse: separate;" width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-text es-p10t es-p15b" align="center">
+                                                            <h1>Thanks for your order<br></h1>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+        <td class="esd-stripe" esd-custom-block-id="1758" align="center">
+            <table class="es-content-body confirmArea" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
+                <tbody>
+                    <tr>
+                        <td class="esd-structure es-p10t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="270" valign="top"><![endif]-->
+                            <table class="es-left" cellspacing="0" cellpadding="0" align="left">
+                                <tbody>
+                                    <tr>
+                                        <td class="es-m-p0r es-m-p20b esd-container-frame" width="270" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-text es-p20l" align = "left">
+                                                            <h4 style="color:white;">ITEMS ORDERED</h4>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if mso]></td><td width="20"></td><td width="270" valign="top"><![endif]-->
+                            <table cellspacing="0" cellpadding="0" align="right">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="270" align="left">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-text" align="left">
+                                                            <table style="width: 100%;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><span style="font-size:15px;color:white; font-weight: 700;">Ticket Class</span></td>
+                                                                        <td style="text-align: center;" width="60"><span style="font-size:13px;"><span style="line-height: 100%; color:white;">QTY</span></span></td>
+                                                                        <td style="text-align: center;" width="100"><span style="font-size:13px;"><span style="line-height: 100%; color:white;">PRICE</span></span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if mso]></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="esd-structure es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="560" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-spacer es-p10b" style="font-size:0" align="center">
+                                                            <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="border-bottom: 1px solid #efefef; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="esd-structure es-p5t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="178" valign="top"><![endif]-->
+                            <table class="es-left" cellspacing="0" cellpadding="0" align="left">
+                                <tbody>
+                                    <tr>
+                                        <td class="es-m-p0r es-m-p20b esd-container-frame" width="178" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-empty-container" style="display: none;" align="center"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if mso]></td><td width="20"></td><td width="362" valign="top"><![endif]-->
+                            <table cellspacing="0" cellpadding="0" align="right">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="362" align="left">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-text" align="left">
+                                                            <p><br></p>
+                                                            <table style="width: 100%;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><h3><strong style="color:white;">First Class</strong></h1> <br></td>
+                                                                        <td style="text-align: center;" width="60"><span id="firstclass-qty" style="color:white;">0</span></td>
+                                                                        <td style="text-align: center;" width="100"><span id="first-classMul" style="color:white;">0</span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p><br></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if mso]></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="esd-structure es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="560" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-spacer es-p10b" style="font-size:0" align="center">
+                                                            <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="border-bottom: 1px solid #efefef; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="esd-structure es-p5t es-p10b es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="178" valign="top"><![endif]-->
+                            <table class="es-left" cellspacing="0" cellpadding="0" align="left">
+                                <tbody>
+                                    <tr>
+                                        <td class="es-m-p0r es-m-p20b esd-container-frame" width="178" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-empty-container" style="display: none;" align="center"></td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if mso]></td><td width="20"></td><td width="362" valign="top"><![endif]-->
+                            <table cellspacing="0" cellpadding="0" align="right">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="362" align="left">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-text" align="left">
+                                                            <p><br></p>
+                                                            <table style="width: 100%;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td><h3><strong style="color:white;">Economy Class</strong></h1><br></td>
+                                                                        <td style="text-align: center;" width="60"><span id="economyClass-qty" style="color:white;">0</span></td>
+                                                                        <td style="text-align: center;" width="100"><span id="economy-ClassMul" style="color:white;">0</span></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p><br></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!--[if mso]></td></tr></table><![endif]-->
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="esd-structure es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="560" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-spacer es-p10b" style="font-size:0" align="center">
+                                                            <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="border-bottom: 1px solid #efefef; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="esd-structure es-p20r es-p20l" esd-general-paddings-checked="false" align="left">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="560" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-spacer es-p10b" style="font-size:0" align="center">
+                                                            <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td style="border-bottom: 1px solid #efefef; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; height: 1px; width: 100%; margin: 0px;"></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="esd-structure es-p5t es-p30b es-p40r es-p20l" align="left">
+                            <table width="100%" cellspacing="0" cellpadding="0">
+                                <tbody>
+                                    <tr>
+                                        <td class="esd-container-frame" width="540" valign="top" align="center">
+                                            <table width="100%" cellspacing="0" cellpadding="0">
+                                                <tbody>
+                                                    <tr>
+                                                        <td class="esd-block-text" align="right">
+                                                            <table style="width: 500px;" class="cke_show_border" cellspacing="1" cellpadding="1" border="0" align="right">
+                                                                <tbody>
+                
+                                                                    <tr>
+                                                                        <td style="text-align: right; font-size: 18px; line-height: 150%;"><strong style="color:white;">Order Total:</strong></td>
+                                                                        <td style="text-align: right; font-size: 20px; line-height: 150%; color:white;"><strong> <span id="book-total">0</span></strong></td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                            <p style="line-height: 150%;"><br></p>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </td>
+    </div>
+    </main>
+
+   
+<script>
+
+const firstClassPlusBtn = document.getElementById("firstClass-plus");
+firstClassPlusBtn.addEventListener("click", function () {
+    plusMinusBtn('firstClass', false);
+
+});
+
+const firstClassMinusBtn = document.getElementById("firstClass-minus");
+firstClassMinusBtn.addEventListener("click", function () {
+    plusMinusBtn('firstClass', true);;
+
+});
+
+
+
+const economyClassPlusBtn = document.getElementById("economy-plus");
+economyClassPlusBtn.addEventListener("click", function () {
+    plusMinusBtn('economy', false);
+
+});
+
+
+const economyClassMinusBtn = document.getElementById("economy-minus");
+economyClassMinusBtn.addEventListener("click", function () {
+    plusMinusBtn('economy', true);
+
+});
+
+function plusMinusBtn(ticket, isIncrease) {
+    const classInput = document.getElementById(ticket + "-input");
+    const classInputNum = parseInt(classInput.value);
+    let classInputNumIncrease = classInputNum;
+    if (isIncrease == true && classInputNum > 0) {
+        classInputNumIncrease = classInputNum - 1;
+
+
+    }
+    if (isIncrease == false) {
+        classInputNumIncrease = classInputNum + 1;
+    }
+
+
+    document.getElementById(ticket + "-input").value = classInputNumIncrease;
+    calculateTotal();
+
+    return classInputNumIncrease;
+}
+
+
+function calculateTotal() {
+    const classInput1 = document.getElementById("firstClass-input");
+    const classInputNum1 = parseInt(classInput1.value);
+    const classInput2 = document.getElementById("economy-input");
+    const classInputNum2 = parseInt(classInput2.value);
+    const totalPrice = classInputNum1 * 150 + classInputNum2 * 100;
+    document.getElementById("subtotal-price").innerText = '$' + totalPrice;
+    const totalTax = totalPrice * .10;
+    document.getElementById("tax-calculation").innerText = '$' + totalTax;
+    const calculateTotalPrice = totalPrice + totalTax;
+    document.getElementById("calculate-total").innerText = calculateTotalPrice;
+}
+
+const bookingBtn = document.getElementById("booking-btn");
+bookingBtn.addEventListener("click", function () {
+    const bookingPage = document.getElementById("booking-page");
+    bookingPage.style.display = "none";
+    document.getElementById("confirmation-area").style.display = "block"
+
+    const classInputW = document.getElementById("firstClass-input").value;
+    const classInputW2 = document.getElementById("economy-input").value;
+    const classInputWNum = parseInt(classInputW);
+    const firstClassMul = classInputWNum * 150;
+    document.getElementById("first-classMul").innerText = '$' + firstClassMul;
+    const classInputW2Num = parseInt(classInputW2);
+    const economyClassMul = classInputW2Num * 100;
+    document.getElementById("economy-ClassMul").innerText = '$' + economyClassMul;
+    const bookTotal = classInputWNum * 150 + classInputW2Num * 100 ;
+    document.getElementById("book-total").innerText = '$' + bookTotal;
+
+
+    document.getElementById("economyClass-qty").innerText = classInputW2;
+    document.getElementById("firstclass-qty").innerText = classInputW;
+});
+
+ </script>
+
+    <!--Thank You-->
+</body>
+
+</html>
